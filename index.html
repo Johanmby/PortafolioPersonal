@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-i18n="meta.title">Johan Benítez — Fullstack Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="loader-text" data-i18n="preloader">LOADING PORTFOLIO</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-percent">0%</div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="logo">JOHAN/DEV</span>
+        </div>
+        <div class="nav-right" id="site-nav">
+            <a href="#about" data-i18n="nav.about">ABOUT</a>
+            <a href="#projects" data-i18n="nav.projects">PROJECTS</a>
+            <a href="#knowledge" data-i18n="nav.knowledge">KNOWLEDGE</a>
+            <a href="#experience" data-i18n="nav.experience">EXPERIENCE</a>
+            <a href="#contact" data-i18n="nav.contact">CONTACT</a>
+        </div>
+        <div class="nav-tools">
+            <div class="lang-selector" role="group" data-i18n-aria="lang.label" aria-label="Language">
+                <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+                <span class="lang-divider" aria-hidden="true">/</span>
+                <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+                <span class="lang-divider" aria-hidden="true">/</span>
+                <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+            </div>
+            <div class="lang-dropdown">
+                <button type="button" class="lang-dropdown-toggle" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-menu" data-i18n-aria="lang.label" aria-label="Language">
+                    <span class="lang-dropdown-current">EN</span>
+                    <span class="lang-caret" aria-hidden="true"></span>
+                </button>
+                <ul class="lang-dropdown-menu" id="lang-menu" role="listbox" hidden>
+                    <li role="none">
+                        <button type="button" class="lang-btn" role="option" data-lang="en" aria-selected="true">EN</button>
+                    </li>
+                    <li role="none">
+                        <button type="button" class="lang-btn" role="option" data-lang="es" aria-selected="false">ES</button>
+                    </li>
+                    <li role="none">
+                        <button type="button" class="lang-btn" role="option" data-lang="fr" aria-selected="false">FR</button>
+                    </li>
+                </ul>
+            </div>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <small data-i18n="hero.kicker">Web · Mobile · Cloud</small>
+                <h1>Johan<br>Benítez</h1>
+                <p data-i18n="hero.lead">Fullstack developer crafting robust and scalable digital experiences.</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary" data-i18n="hero.cv">GET CV →</a>
+                    <a href="#" class="btn btn-secondary">LINKEDIN</a>
+                    <a href="#" class="btn btn-secondary">GITHUB</a>
+                    <a href="#" class="btn btn-secondary">INSTAGRAM</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/image.png" alt="Johan Benítez">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="scene-tag" data-i18n="about.scene">SCENE 02 — ABOUT</div>
+        <h2 class="scene-title" data-i18n="about.title">WHO AM I</h2>
+
+        <div class="about-grid">
+            <div class="about-image-card">
+                <img src="images/image.png" alt="Johan Benítez">
+                <div class="image-meta">
+                    <span data-i18n="about.fig">FIG. 01</span>
+                    <span data-i18n="about.portrait">PROFILE — PORTRAIT</span>
+                </div>
+            </div>
+            <div class="about-text-content">
+                <div class="bio-block">
+                    <span class="field-label" data-i18n="about.meLabel">(me)</span>
+                    <p data-i18n="about.me">Graduated in Computer Engineering from the Polytechnic University of Valencia. Passionate about technology, programming, and entrepreneurship.</p>
+                </div>
+                <div class="bio-block">
+                    <span class="field-label" data-i18n="about.aboutLabel">(about)</span>
+                    <p data-i18n="about.about">Experienced in web, hardware systems and financial payment technologies. Thrive in teams and always aim for top performance.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-footer-grid">
+            <div class="footer-card">
+                <div class="card-label" data-i18n="about.languages">/ LANGUAGES</div>
+                <div class="lang-list-container">
+                    <div class="card-box">
+                        <span class="lang-name" data-i18n="lang.spanish">Spanish</span>
+                        <span class="lang-level" data-i18n="level.1">01 NATIVE</span>
+                    </div>
+                    <div class="card-box">
+                        <span class="lang-name" data-i18n="lang.chinese">Chinese</span>
+                        <span class="lang-level" data-i18n="level.2">02 NATIVE</span>
+                    </div>
+                    <div class="card-box">
+                        <span class="lang-name" data-i18n="lang.english">English</span>
+                        <span class="lang-level" data-i18n="level.3">03 HIGH</span>
+                    </div>
+                    <div class="card-box">
+                        <span class="lang-name" data-i18n="lang.valencian">Valencian</span>
+                        <span class="lang-level" data-i18n="level.4">04 HIGH</span>
+                    </div>
+                    <div class="card-box">
+                        <span class="lang-name" data-i18n="lang.korean">Korean</span>
+                        <span class="lang-level" data-i18n="level.5">05 BASIC</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-card">
+                <div class="card-label" data-i18n="about.background">/ BACKGROUND</div>
+                <div class="bg-list-container">
+                    <div class="card-box bg-box">
+                        <div class="bg-badge" data-i18n="about.degreeBadge">(DEGREE) - UPV</div>
+                        <div class="bg-title" data-i18n="about.upv">Polytechnic University of Valencia</div>
+                        <div class="bg-sub" data-i18n="about.degree">Bachelor's Degree in Computer Engineering</div>
+                    </div>
+                    <div class="card-box bg-box">
+                        <div class="bg-badge" data-i18n="about.erasmusBadge">(ERASMUS) - UTCN</div>
+                        <div class="bg-title" data-i18n="about.utcn">Technical University of Cluj-Napoca</div>
+                        <div class="bg-sub" data-i18n="about.erasmus">Erasmus+ BIPS in Computer Engineering</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <div class="section-title-wrapper" id="projects">
+        <h2 class="section-heading" data-i18n="projects.title">PROJECTS</h2>
+    </div>
+
+    <section class="gallery">
+        <figure><img src="https://picsum.photos/seed/dev1/800/1000" alt=""><figcaption data-i18n="projects.alpha">Project Alpha</figcaption></figure>
+        <figure><img src="https://picsum.photos/seed/dev2/800/600" alt=""><figcaption data-i18n="projects.arch">System Architecture</figcaption></figure>
+        <figure><img src="https://picsum.photos/seed/dev3/800/900" alt=""><figcaption data-i18n="projects.front">Frontend Interface</figcaption></figure>
+        <figure><img src="https://picsum.photos/seed/dev4/800/1100" alt=""><figcaption data-i18n="projects.back">Backend Logic</figcaption></figure>
+        <figure><img src="https://picsum.photos/seed/dev5/800/640" alt=""><figcaption data-i18n="projects.db">Database Schema</figcaption></figure>
+        <figure><img src="https://picsum.photos/seed/dev6/800/800" alt=""><figcaption data-i18n="projects.cloud">Cloud Integration</figcaption></figure>
+    </section>
+
+    <!-- KNOWLEDGE SECTION -->
+    <section class="knowledge-section" id="knowledge">
+        <div class="knowledge-sticky">
+            <div class="knowledge-header">
+                <div class="scene-tag" data-i18n="knowledge.scene">SCENE 03 — SKILLS</div>
+                <h2 class="scene-title" data-i18n="knowledge.title">KNOWLEDGE</h2>
+            </div>
+
+            <div class="knowledge-stage">
+                <div class="knowledge-slide active" data-index="1">
+                    <div class="slide-number-bg">01</div>
+                    <div class="slide-content">
+                        <span class="slide-tag" data-i18n="k1.tag">(01) FRONTEND</span>
+                        <h3 data-i18n="k1.title">UI/UX & FRONTEND</h3>
+                        <p data-i18n="k1.body">Design is more than looks — it's about clarity and connection. Clean, responsive interfaces that feel intuitive across devices.</p>
+                    </div>
+                </div>
+                <div class="knowledge-slide" data-index="2">
+                    <div class="slide-number-bg">02</div>
+                    <div class="slide-content">
+                        <span class="slide-tag" data-i18n="k2.tag">(02) BACKEND</span>
+                        <h3 data-i18n="k2.title">BACKEND & DATABASE</h3>
+                        <p data-i18n="k2.body">Solid foundations for applications: scalable backend architectures, efficient data and secure communication between services.</p>
+                    </div>
+                </div>
+                <div class="knowledge-slide" data-index="3">
+                    <div class="slide-number-bg">03</div>
+                    <div class="slide-content">
+                        <span class="slide-tag" data-i18n="k3.tag">(03) MOBILE</span>
+                        <h3 data-i18n="k3.title">MOBILE DEVELOPMENT</h3>
+                        <p data-i18n="k3.body">Cross-platform mobile applications built for high performance, smooth animations, and native device integration.</p>
+                    </div>
+                </div>
+                <div class="knowledge-slide" data-index="4">
+                    <div class="slide-number-bg">04</div>
+                    <div class="slide-content">
+                        <span class="slide-tag" data-i18n="k4.tag">(04) CLOUD</span>
+                        <h3 data-i18n="k4.title">CLOUD & DevOps</h3>
+                        <p data-i18n="k4.body">Automated deployments, serverless architectures, and reliable cloud infrastructure to keep systems running smoothly.</p>
+                    </div>
+                </div>
+                <div class="knowledge-slide" data-index="5">
+                    <div class="slide-number-bg">05</div>
+                    <div class="slide-content">
+                        <span class="slide-tag" data-i18n="k5.tag">(05) HARDWARE</span>
+                        <h3 data-i18n="k5.title">HARDWARE SYSTEMS</h3>
+                        <p data-i18n="k5.body">IoT devices, embedded systems, and UAV testing integrating low-level code with practical real-world electronics.</p>
+                    </div>
+                </div>
+                <div class="knowledge-slide" data-index="6">
+                    <div class="slide-number-bg">06</div>
+                    <div class="slide-content">
+                        <span class="slide-tag" data-i18n="k6.tag">(06) SECURITY</span>
+                        <h3 data-i18n="k6.title">SECURITY & PAYMENTS</h3>
+                        <p data-i18n="k6.body">Secure financial payment gateways, encrypted data transmission, and robust authentication protocols.</p>
+                    </div>
+                </div>
+                <div class="knowledge-slide" data-index="7">
+                    <div class="slide-number-bg">07</div>
+                    <div class="slide-content">
+                        <span class="slide-tag" data-i18n="k7.tag">(07) ARCHITECTURE</span>
+                        <h3 data-i18n="k7.title">SYSTEM ARCHITECTURE</h3>
+                        <p data-i18n="k7.body">Designing robust distributed systems, microservices, and modular codebases built to scale.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="knowledge-counter" aria-live="polite"><span id="current-slide">01</span><span class="counter-rest">/ 07</span></div>
+            <div class="knowledge-vscroll" aria-hidden="true">
+                <div class="knowledge-vscroll-thumb" id="knowledgeThumb"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience-section" id="experience">
+        <div class="scene-tag" data-i18n="exp.scene">SCENE 06 — TRACK RECORD</div>
+        <h2 class="scene-title experience-title" data-i18n="exp.title">EXPERIENCE</h2>
+
+        <div class="experience-layout">
+            <div class="experience-work">
+                <div class="exp-label" data-i18n="exp.work">/ WORK</div>
+                <article class="work-card">
+                    <div>
+                        <h3 data-i18n="exp.role1">DEVOPS DEVELOPER</h3>
+                        <p>F1-Connecting</p>
+                    </div>
+                    <span class="work-tag" data-i18n="exp.company">COMPANY</span>
+                </article>
+                <article class="work-card">
+                    <div>
+                        <h3 data-i18n="exp.role2">DIGITAL LEAD</h3>
+                        <p>A Little Spark</p>
+                    </div>
+                    <span class="work-tag" data-i18n="exp.company">COMPANY</span>
+                </article>
+                <article class="work-card">
+                    <div>
+                        <h3 data-i18n="exp.role3">PROJECT MANAGER</h3>
+                        <p>Oroneta</p>
+                    </div>
+                    <span class="work-tag self" data-i18n="exp.self">SELF</span>
+                </article>
+            </div>
+
+            <div class="experience-side">
+                <div class="exp-block">
+                    <div class="exp-label" data-i18n="exp.soft">/ SOFT SKILLS</div>
+                    <div class="pill-wrap">
+                        <span class="pill" data-i18n="skill.pci">PCI KNOWLEDGE</span>
+                        <span class="pill" data-i18n="skill.cyber">CYBERSECURITY</span>
+                        <span class="pill" data-i18n="skill.pm">PROJECT MANAGER</span>
+                        <span class="pill" data-i18n="skill.scrum">SCRUM MANAGER</span>
+                        <span class="pill" data-i18n="skill.team">TEAM WORKING</span>
+                        <span class="pill" data-i18n="skill.lead">LEAD EXPERIENCE</span>
+                    </div>
+                </div>
+                <div class="exp-block">
+                    <div class="exp-label" data-i18n="exp.certs">/ CERTIFICATIONS</div>
+                    <div class="pill-wrap">
+                        <span class="pill pill-orange" data-i18n="cert.google">GOOGLE CYBERSECURITY CERT.</span>
+                        <span class="pill pill-orange" data-i18n="cert.sap">SAP S/4 HANA CONSULTANT</span>
+                        <span class="pill pill-orange" data-i18n="cert.hsk">HSK CHINESE CERT.</span>
+                        <span class="pill pill-orange" data-i18n="cert.fce">FCE ENGLISH CERT.</span>
+                        <span class="pill pill-orange" data-i18n="cert.acm">ACM MEMBER</span>
+                        <span class="pill pill-orange" data-i18n="cert.sql">SQL INJECTION HACKATHON</span>
+                        <span class="pill pill-orange" data-i18n="cert.upv">UPV-ITI HACKATHON</span>
+                        <span class="pill pill-orange" data-i18n="cert.dival">DIVALHACK VALENCIA COUNCIL</span>
+                        <span class="pill pill-orange" data-i18n="cert.adabyron">ADABYRON CODE COMPETITION</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="scene-tag" data-i18n="contact.scene">SCENE 07 — OPEN TO OPPORTUNITIES WORLDWIDE</div>
+        <h2 class="scene-title contact-title" data-i18n="contact.title">Let's connect</h2>
+        <a class="contact-email" href="mailto:johan@example.com">johan@example.com</a>
+
+        <div class="contact-layout">
+            <div class="connect-list">
+                <a class="connect-row" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <span>GitHub</span>
+                    <span class="connect-handle" data-i18n="contact.profile">Profile ↗</span>
+                </a>
+                <a class="connect-row" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                    <span>LinkedIn</span>
+                    <span class="connect-handle" data-i18n="contact.profile">Profile ↗</span>
+                </a>
+                <a class="connect-row" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <span>Instagram</span>
+                    <span class="connect-handle" data-i18n="contact.profile">Profile ↗</span>
+                </a>
+                <a class="connect-row" href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+                    <span>WhatsApp</span>
+                    <span class="connect-handle" data-i18n="contact.message">Message ↗</span>
+                </a>
+            </div>
+
+            <form class="contact-form" id="contact-form" action="mailto:johan@example.com" method="post" enctype="text/plain">
+                <div class="exp-label" data-i18n="contact.form">/ CONTACT</div>
+                <label class="contact-field">
+                    <span data-i18n="contact.name">Name</span>
+                    <input type="text" name="name" autocomplete="name" required>
+                </label>
+                <label class="contact-field">
+                    <span data-i18n="contact.email">Email</span>
+                    <input type="email" name="email" autocomplete="email" required>
+                </label>
+                <label class="contact-field">
+                    <span data-i18n="contact.messageLabel">Message</span>
+                    <textarea name="message" rows="6" required></textarea>
+                </label>
+                <button class="btn btn-primary" type="submit" data-i18n="contact.send">Send message →</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/cursor-swarm.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
